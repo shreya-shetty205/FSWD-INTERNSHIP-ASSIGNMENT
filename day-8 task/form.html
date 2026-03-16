@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .form-box{
+            background:white;
+            padding:30px;
+            width:320px;
+            border-radius:12px;
+            box-shadow:0 8px 20px rgba(24, 5, 61, 0.2);
+            text-align:center;
+        }
+
+        h2{
+            margin-bottom:20px;
+        }
+
+        input{
+            width:100%;
+            padding:10px;
+            margin:8px 0;
+            border:1px solid #ccc;
+            border-radius:6px;
+        }
+
+        button{
+            width:100%;
+            padding:10px;
+            background:#667eea;
+            color:white;
+            border:none;
+            border-radius:6px;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#5a67d8;
+        }
+
+        .error{
+            color:red;
+            font-size:13px;
+            text-align:left;
+        }
+
+        .success{
+            color:green;
+            margin-top:10px;
+            font-weight:bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-box">
+    <h2>Register</h2>
+
+    <form id="form">
+        <input type="text" id="name" placeholder="Name">
+        <div id="nameErr" class="error"></div>
+
+        <input type="text" id="email" placeholder="Email">
+        <div id="emailErr" class="error"></div>
+
+        <input type="password" id="pass" placeholder="Password">
+        <div id="passErr" class="error"></div>
+
+        <input type="password" id="cpass" placeholder="Confirm Password">
+        <div id="cpassErr" class="error"></div>
+
+        <button id="btn">Submit</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

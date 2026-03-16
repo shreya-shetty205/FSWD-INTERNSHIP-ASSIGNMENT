@@ -1,0 +1,124 @@
+body{
+margin:0;
+font-family:Poppins;
+
+background-image:url("https://images.unsplash.com/photo-1472214103451-9374bd1c798e");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+
+
+body::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.35);
+z-index:-1;
+}
+
+
+
+.home-container{
+text-align:center;
+color:white;
+}
+
+.home-container h1{
+font-size:48px;
+text-shadow:2px 2px 10px black;
+}
+
+.home-container p{
+font-size:20px;
+text-shadow:1px 1px 8px black;
+}
+
+
+
+.mood-container{
+background:rgba(255,255,255,0.9);
+padding:40px;
+width:360px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 8px 25px rgba(0,0,0,0.3);
+}
+
+
+
+.buttons button{
+margin:6px;
+padding:10px 18px;
+border:none;
+border-radius:8px;
+background:#4dabf7;
+color:white;
+font-size:14px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.buttons button:hover{
+background:#339af0;
+transform:scale(1.05);
+}
+
+
+.mood-display{
+margin-top:20px;
+padding:20px;
+background:#f1f3f5;
+border-radius:10px;
+}
+
+.mood-display h1{
+font-size:60px;
+margin:0;
+}
+
+.quote{
+font-style:italic;
+color:#555;
+}
+
+
+
+.home-btn{
+margin-bottom:15px;
+padding:8px 15px;
+border:none;
+border-radius:6px;
+background:#bad21b;
+color:white;
+cursor:pointer;
+}
+
+.home-btn:hover{
+background:#19a0b8;
+}
+
+
+
+.clear-btn{
+margin-top:10px;
+padding:8px 15px;
+border:none;
+border-radius:6px;
+background:#ff6b6b;
+color:white;
+cursor:pointer;
+}
+
+.clear-btn:hover{
+background:#fa5252;
+}
