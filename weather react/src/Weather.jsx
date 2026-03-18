@@ -9,7 +9,7 @@ const [weather, setWeather] = useState(null);
 const [loading, setLoading] = useState(false);
 const [error, setError] = useState("");
 
-const API_KEY = "a2d82ba86ffe14e347677b07a9002248";
+const API_KEY = "YOUR API KEY";
 
 
 
